@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="cal">
+            <div id="inputbox">
+                <input type="text" name="" id="input" readonly>
+                <input type="text" id="rough" readonly>
+            </div>
+
+            <div id="btn">
+                <button onkeydown="key(event)" value="ac" id="ac" onclick="ac()">A/C</button>
+                <button onkeydown="key(event)" value="%" onclick="del()">DEL</button>
+                <button onkeydown="key(event)" value="d" onclick="btn('/')" class="sign">/</button>
+                <button onkeydown="key(event)" value="7" onclick="btn(7)">7</button>
+                <button onkeydown="key(event)" value="8" onclick="btn(8)">8</button>
+                <button onkeydown="key(event)" value="9" onclick="btn(9)">9</button>
+                <button onkeydown="key(event)" value="*" onclick="btn('*')" class="sign">*</button>
+                <button onkeydown="key(event)" value="4" onclick="btn(4)">4</button>
+                <button onkeydown="key(event)" value="5" onclick="btn(5)">5</button>
+                <button onkeydown="key(event)" value="6" onclick="btn(6)">6</button>
+                <button onkeydown="key(event)" value="-" onclick="btn('-')" class="sign">-</button>
+                <button onkeydown="key(event)" value="1" onclick="btn(1)">1</button>
+                <button onkeydown="key(event)" value="2" onclick="btn(2)">2</button>
+                <button onkeydown="key(event)" value="3" onclick="btn(3)">3</button>
+                <button onkeydown="key(event)" value="+" onclick="btn('+')" class="sign">+</button>
+                <button onkeydown="key(event)" value="0" onclick="btn(0)" id="zero">0</button>
+                <button onkeydown="key(event)" value="." onclick="btn('.')" id="dot">.</button>
+                <button onkeydown="key(event)" value="=" onclick="equal('Enter Something !!')" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
